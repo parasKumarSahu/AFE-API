@@ -15,6 +15,7 @@
 ## Create user
 7. Rails c
 8. User.create!(email: 'example@mail.com' , password: '123123123' , password_confirmation: '123123123')
+(after creating user exit rails console, user can also be created by post request to the user API)
 
 ## Get Authentication Token
 9. curl -H "Content-Type: application/json" -X POST -d '{"email":"example@mail.com","password":"123123123"}' http://localhost:3000/authenticate
