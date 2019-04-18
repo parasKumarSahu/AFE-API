@@ -1,7 +1,7 @@
 class ApplicationController < ActionController::API
   before_action :authorize_request, except: :create
   def not_found
-    render json: { error: 'not_found' }
+    render json: { error: 'API not found' }
   end
 
   def authorize_request

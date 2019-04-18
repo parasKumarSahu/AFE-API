@@ -1,4 +1,6 @@
 Rails.application.routes.draw do
+  resources :plants
+  resources :cars
   resources :users
   resources :quotes
   resources :actors
